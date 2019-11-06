@@ -3,9 +3,10 @@ username=admin1；
 password=123
 
 {"result":"eyJhbGciOiJIUzUxMiJ9.eyJleHAiOjE1MjIwNTA4MDUsInN1YiI6ImFkbWluMSIsImNyZWF0ZWQiOjE1MjIwNTA3NTU3MDB9.PUeXKB1FHzVLR6pW0XbS_2_jevJJfDlibqlAcq8KI0gQ9bT2n1g3zpPr7Q6WR4EAsD0Ex96hevz38jo8dipmOQ","status":"ok"}
+
 2	刷新令牌码	注：此接口和以下所有接口需要在header中带上Authorization：Bearer+空格+token	/api/v1/auth/refreshToken	post	header	在http头文件里填写，Authorization：Bearer+空格+token	{"result":"eyJhbGciOiJIUzUxMiJ9.eyJleHAiOjE1MjIwNTE4MDAsInN1YiI6ImFkbWluMSIsImNyZWF0ZWQiOjE1MjIwNTE3NTA3ODh9.Nfxzh9QyvOWdynkQE74ntqyUVkCBUciRe-P5SmQH_oehBWzhLRZQOUyrCn_6Ind85D17vYnkwrgXM_OV_IhTMg","status":"200"}
-3	
-本地文件上传
+
+3	本地文件上传
 包括大文件和常规文件的上传，如果是客户端上传大文件需要添加参数
 fileSize，blockIndex，blockTotal，不添加这些参数默认为普通文件上传。
 
@@ -13,9 +14,7 @@ fileSize，blockIndex，blockTotal，不添加这些参数默认为普通文件�
 
 每个分片需要保证大于等于5M，否则没有必要使用分片上传。
 
- 
-
-/api/v1/file/localFileUpload
+ /api/v1/file/localFileUpload
 
 post
 multipart/form-data
